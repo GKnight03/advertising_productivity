@@ -1,0 +1,36 @@
+digraph ERD_Advertising_Productivity {
+	fontsize=10 rankdir=LR
+	User [label="CustomUser
+- id (PK)
+- username
+- email
+- password
+- role"]
+	Project [label="Project
+- id (PK)
+- name
+- description
+- start_date
+- end_date
+- owner_id (FK)"]
+	Task [label="Task
+- id (PK)
+- title
+- description
+- due_date
+- status
+- project_id (FK)
+- assigned_to (FK)"]
+	Campaign [label="Campaign
+- id (PK)
+- name
+- description
+- budget
+- start_date
+- end_date
+- project_id (FK)"]
+	User -> Project [label="1:M (owner)"]
+	User -> Task [label="1:M (assigned_to)"]
+	Project -> Task [label="1:M"]
+	Project -> Campaign [label="1:M"]
+}
