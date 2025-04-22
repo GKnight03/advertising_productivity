@@ -1,0 +1,13 @@
+logo.png
+https://example.com/assets/logo.png
+
+campaign_banner.jpg
+https://unsplash.com/photos/sample-campaign-banner
+
+client_avatar.svg
+https://www.svgrepo.com/svg/123456/client-avatar
+
+# If you created your own images, you can say:
+chart_placeholder.png
+Created by me using Excel export
+

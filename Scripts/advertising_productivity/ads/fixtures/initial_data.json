@@ -1,0 +1,79 @@
+[
+    {
+        "model": "ads.customuser",
+        "pk": 1,
+        "fields": {
+            "username": "admin",
+            "email": "admin@admin.com",
+            "password": "pbkdf2_sha256$260000$fakehashed$password",
+            "role": "ADMIN"
+        }
+    },
+    {
+        "model": "ads.customuser",
+        "pk": 2,
+        "fields": {
+            "username": "manager1",
+            "email": "manager1@example.com",
+            "password": "pbkdf2_sha256$260000$fakehashed$password",
+            "role": "PROJECT_MANAGER"
+        }
+    },
+    {
+        "model": "ads.customuser",
+        "pk": 3,
+        "fields": {
+            "username": "client1",
+            "email": "client1@example.com",
+            "password": "pbkdf2_sha256$260000$fakehashed$password",
+            "role": "CLIENT"
+        }
+    },
+    {
+        "model": "ads.project",
+        "pk": 1,
+        "fields": {
+            "name": "Marketing Website",
+            "description": "A landing page for the client",
+            "start_date": "2024-04-01",
+            "end_date": "2024-04-30",
+            "owner_id": 2
+        }
+    },
+    {
+        "model": "ads.task",
+        "pk": 1,
+        "fields": {
+            "title": "Design Homepage",
+            "description": "Create the main layout and wireframe",
+            "due_date": "2024-04-10",
+            "status": "Pending",
+            "project_id": 1,
+            "assigned_to": 3
+        }
+    },
+    {
+        "model": "ads.task",
+        "pk": 2,
+        "fields": {
+            "title": "Deploy Website",
+            "description": "Deploy to production",
+            "due_date": "2024-04-20",
+            "status": "In Progress",
+            "project_id": 1,
+            "assigned_to": 3
+        }
+    },
+    {
+        "model": "ads.campaign",
+        "pk": 1,
+        "fields": {
+            "name": "Launch Ad Campaign",
+            "description": "Google Ads for product launch",
+            "budget": 5000,
+            "start_date": "2024-04-05",
+            "end_date": "2024-04-25",
+            "project_id": 1
+        }
+    }
+]
